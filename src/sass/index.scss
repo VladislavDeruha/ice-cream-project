@@ -1,2 +1,71 @@
-@import './common';
-@import './example';
+//!======================  Підключення шрифтів/ Connecting Fonts  ===================================!
+// &display=swap - добавить при подключении через плагин
+@import url(https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,800,900c&display=swap);
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:regular,700&display=swap);
+
+@import url(https://fonts.googleapis.com/css?family=Seymour+One:regular);
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #FCFCFC;
+}
+
+// Подключить если есть локальные файлы шрифтов
+// import "fonts/fonts";
+
+//!======================  Підключення Нормалайзу/ Connecting Normalize  ============================!
+@import "./base/normalize";
+
+//!======================  Підключення Обнулення/ Connecting Reset  =================================!
+@import "./base/reset";
+
+//!======================  Indent caps,body,footer  =================================================!
+body {
+    height: 100%;
+}
+
+.wrapper {
+    overflow: hidden;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex: 1 1 auto;
+}
+
+//!======================  Bounding container  ======================================================!
+[class*="__container"] {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+//!======================  Підключення шрифтів/ Connecting Fonts  ===================================!
+//!======================  Підключення Змінних/ Connecting Variables  ===============================!
+@import "./utils/_variable";
+//!======================  Підключення Міксинів/ Connecting Mixinov  ================================!
+//!======================  Підключення іконкових шрифтів/ Connecting Icon Fonts  ====================!
+// Подключить если есть файл иконочного шрифта
+// @import "fonts/icons";
+
+//!======================  Header/ Шапка сайту  =====================================================!
+@import "./components/header";
+//!======================  Burger-Menu  =============================================================!
+@import "./components/burger-menu";
+//!======================  Products  ================================================================!
+@import "./page/products";
+//!======================  Advantages  ==============================================================!
+@import "./page/advantages";
+//!======================  Customer-reviews  ========================================================!
+@import "./page/customer-reviews";
+//!======================  Contacts  ================================================================!
+@import "./page/contacts";
+//!======================  Modal  ===================================================================!
+@import "./components/modal";
+//!======================  Footer/ Підвал сайту  ====================================================!
+@import "./components/footer";
+//!======================  Adaptive  ================================================================!
+@import "./utils/adaptive";
