@@ -1,6 +1,6 @@
 //!======================  Customer-reviews  ========================================================!
 .last {
-  height: 120px;
+  height: 210px;
   background-color: rgba(132, 161, 120, 1);
 }
 
@@ -10,17 +10,19 @@ img {
 }
 
 .customer-reviews {
+  width: 320px;
   margin-left: auto;
   margin-right: auto;
-  background-image: url('/src/images/customer-reviews/reviews-bg-mobile.jpg');
-  background-repeat: no-repeat;
+
+  background-color: #ffffff;
+  // background-image: url('/src/images/customer-reviews/reviews-bg-mobile.jpg');
+  background-repeat: repeat-y;
   background-position: center;
-  background-size: cover;
 
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-    background-image: url('/src/images/customer-reviews/reviews-bg-mobile@2x.jpg');
+    // background-image: url('/src/images/customer-reviews/reviews-bg-mobile@2x.jpg');
   }
 }
 
@@ -28,20 +30,9 @@ img {
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 181;
+  padding-top: 186px;
   padding-bottom: 425px;
-
-  @media screen and (min-width: 480px) {
-    width: 280px;
-  }
-
-  @media screen and (min-width: 768px) {
-    width: 704px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    width: 1014px;
-  }
+  width: 280px;
 }
 
 .customer-reviews__thumb {
@@ -58,7 +49,6 @@ img {
 .customer-reviews__item {
   margin-left: auto;
   margin-right: auto;
-  width: 280px;
 
   text-align: center;
 }
@@ -67,58 +57,105 @@ img {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 32px;
+  width: 85px;
+  height: 85px;
 
   border-radius: 50%;
 }
 
 .customer-reviews__text {
-  margin-bottom: 32px;
-  padding: 39px 109px;
+  margin-bottom: 30px;
+  padding: 39px 34px;
 
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.86;
-  letter-spacing: 0.04em;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2.55;
 
   background-color: rgba(132, 161, 120, 1);
-  border-radius: 24px;
+  border-radius: 10px;
 }
 
 .customer-reviews__desc {
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.86;
 
   color: #000000;
 }
 
 .pagination {
-  display: flex;
-  justify-content: center;
-  gap: 18px;
-}
-
-.pagination__marker {
-  width: 12px;
-  height: 12px;
-
-  border-radius: 50%;
-
-  background-color: rgba(217, 217, 217, 1);
-
-  &_active {
-    background-color: rgba(132, 161, 120, 1);
-  }
+  display: none;
 }
 
 @media screen and (min-width: 768px) {
   .customer-reviews {
-    background-image: url('/src/images/customer-reviews/reviews-bg-tablet.jpg');
+    width: 704px;
+    // background-image: url('/src/images/customer-reviews/reviews-bg-tablet.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
-      background-image: url('/src/images/customer-reviews/reviews-bg-tablet@2x.jpg');
+      // background-image: url('/src/images/customer-reviews/reviews-bg-tablet@2x.jpg');
+    }
+  }
+
+  .customer-reviews__wrapper {
+    padding-top: 223px;
+    padding-bottom: 384px;
+    width: 704px;
+  }
+
+  .customer-reviews__thumb {
+    top: -164px;
+
+    border-radius: 18px;
+  }
+
+  .customer-reviews__item {
+    margin-bottom: 32px;
+  }
+
+  .customer-reviews__foto {
+    margin-bottom: 28px;
+  }
+
+  .customer-reviews__text {
+    margin-bottom: 32px;
+    padding: 80px 28px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+
+    border-radius: 24px;
+  }
+
+  .customer-reviews__desc {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+  }
+
+  .pagination {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+  }
+
+  .pagination__marker {
+    width: 12px;
+    height: 12px;
+
+    border-radius: 50%;
+
+    background-color: rgba(217, 217, 217, 1);
+
+    &_active {
+      background-color: rgba(132, 161, 120, 1);
     }
   }
 }
@@ -126,18 +163,19 @@ img {
 @media screen and (min-width: 1200px) {
   .customer-reviews {
     width: 1200px;
-    background-image: url('/src/images/customer-reviews/reviews-bg.jpg');
+    // background-image: url('/src/images/customer-reviews/reviews-bg.jpg');
 
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
-      background-image: url('/src/images/customer-reviews/reviews-bg@2x.jpg');
+      // background-image: url('/src/images/customer-reviews/reviews-bg@2x.jpg');
     }
   }
 
   .customer-reviews__wrapper {
     padding-top: 456;
     padding-bottom: 196px;
+    width: 1014px;
   }
 
   .customer-reviews__thumb {
@@ -146,8 +184,13 @@ img {
     border-radius: 24px;
   }
 
-  .customer-reviews__item {
+  .customer-reviews__foto {
     margin-bottom: 32px;
-    width: 968px;
+  }
+
+  .customer-reviews__text {
+    padding: 39px 109px;
+
+    font-size: 16px;
   }
 }
