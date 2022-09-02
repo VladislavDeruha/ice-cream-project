@@ -15,14 +15,13 @@ img {
   margin-right: auto;
 
   background-color: #ffffff;
-  // background-image: url('/src/images/customer-reviews/reviews-bg-mobile.jpg');
+  background-image: url('/src/images/customer-reviews/reviews-bg-mobile.jpg');
   background-repeat: repeat-y;
-  background-position: center;
 
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-    // background-image: url('/src/images/customer-reviews/reviews-bg-mobile@2x.jpg');
+    background-image: url('/src/images/customer-reviews/reviews-bg-mobile@2x.jpg');
   }
 }
 
@@ -65,7 +64,7 @@ img {
 
 .customer-reviews__text {
   margin-bottom: 30px;
-  padding: 39px 34px;
+  padding: 34px 42px;
 
   font-weight: 400;
   font-size: 12px;
@@ -91,14 +90,14 @@ img {
 @media screen and (min-width: 768px) {
   .customer-reviews {
     width: 704px;
-    // background-image: url('/src/images/customer-reviews/reviews-bg-tablet.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-position: bottom center;
+    background-image: url('/src/images/customer-reviews/reviews-bg-tablet.jpg');
 
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
-      // background-image: url('/src/images/customer-reviews/reviews-bg-tablet@2x.jpg');
+      background-image: url('/src/images/customer-reviews/reviews-bg-tablet@2x.jpg');
     }
   }
 
@@ -124,7 +123,7 @@ img {
 
   .customer-reviews__text {
     margin-bottom: 32px;
-    padding: 80px 28px;
+    padding: 28px 80px;
 
     font-weight: 500;
     font-size: 14px;
@@ -163,12 +162,13 @@ img {
 @media screen and (min-width: 1200px) {
   .customer-reviews {
     width: 1200px;
-    // background-image: url('/src/images/customer-reviews/reviews-bg.jpg');
+    background-position: cover;
+    background-image: url('/src/images/customer-reviews/reviews-bg.jpg');
 
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
-      // background-image: url('/src/images/customer-reviews/reviews-bg@2x.jpg');
+      background-image: url('/src/images/customer-reviews/reviews-bg@2x.jpg');
     }
   }
 
@@ -190,6 +190,7 @@ img {
 
   .customer-reviews__text {
     padding: 39px 109px;
+    width: 968px;
 
     font-size: 16px;
   }
